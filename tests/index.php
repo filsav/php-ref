@@ -112,6 +112,6 @@
   <body>
     <h1><a href="https://github.com/digitalnature/php-ref">REF</a></h1>
     <h2><a href="index.php?mode=html">HTML output</a> ~ <a href="index.php?mode=text">TEXT output</a></h2>
-    <h3> created by <a href="http://digitalnature.eu/">digitalnature</digitalnature></h3>
+    <h3> created by <a href="http://digitalnature.eu/">digitalnature</a></h3>
   </body>
 </html>  
