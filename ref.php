@@ -445,7 +445,7 @@ class ref{
       // tags that have a single component (eg. link, license, author, throws...);
       // note that @throws may have 2 components, however most people use it like "@throws ExceptionClass if whatever...",
       // which, if broken into two values, leads to an inconsistent description sentence
-      if(!in_array($tag, array('global', 'param', 'return', 'var'))){
+      if(!in_array($tag, array('global', 'param', 'return', 'var', 'throws'))){
         $tags[$tag][] = $line;
         end($tags[$tag]);
         $pointer = &$tags[$tag][key($tags[$tag])];
