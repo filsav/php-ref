@@ -1806,8 +1806,13 @@ class ref{
           if($inherited)
             $meta['sub'] = array(array('Declared in', $sourceClass->getShortName()));
 
-          if(isset($meta['tags']['var'][0]))
+          if(isset($meta['tags']['var'][0])) {
             $meta['left'] = $meta['tags']['var'][0][0];
+            if($meta['title'] == '' && count($meta['tags']['var'][0] == 2)) {
+              list($var_name,$title) = explode(" ", $meta['tags']['var'][0][1], 2);
+              $meta['title'] = $title;
+            }
+          }
 
           unset($meta['tags']);        
         }
